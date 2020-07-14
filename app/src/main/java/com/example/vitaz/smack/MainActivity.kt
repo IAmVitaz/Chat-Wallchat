@@ -1,4 +1,4 @@
-package com.example.jonnyb.smack
+package com.example.vitaz.smack
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
