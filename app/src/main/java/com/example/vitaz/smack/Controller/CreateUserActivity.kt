@@ -1,9 +1,10 @@
-package com.example.vitaz.smack
+package com.example.vitaz.smack.Controller
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.vitaz.smack.R
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
