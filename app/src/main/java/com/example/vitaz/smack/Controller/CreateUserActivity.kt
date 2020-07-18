@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.vitaz.smack.R
+import com.example.vitaz.smack.Services.AuthService
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
@@ -52,6 +53,11 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View) {
+        AuthService.registerUser(this, "vit.azarov@gmail.com", "12345") {complete ->
+            if (complete) {
+
+            }
+        }
 
     }
 }
