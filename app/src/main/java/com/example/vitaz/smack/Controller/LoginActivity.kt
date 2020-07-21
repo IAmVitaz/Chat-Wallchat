@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.vitaz.smack.R
+import com.example.vitaz.smack.Services.AuthService
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,23 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun loginLoginButtonClicked(view: View) {
+        val email = loginEmailText.text.toString()
+        val password = loginPasswordText.text.toString()
+
+        AuthService.loginUser(this, email, password) {loginSuccess ->
+            if (loginSuccess) {
+                AuthService.findUserByEmail(this) {findSuccess ->
+                    if (findSuccess) {
+                        //activity is sending broadcast as part of it
+
+                        finish()
+                    }
+
+                }
+            }
+
+        }
+
 
     }
 

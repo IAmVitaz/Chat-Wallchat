@@ -28,19 +28,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Vitaz"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toEndOf="@+id/userImageNavHeader"
-        app:layout_constraintTop_toTopOf="@+id/userImageNavHeader" />
+        app:layout_constraintTop_toTopOf="@+id/userImageNavHeader"
+        tools:text="Vitaz" />
 
     <TextView
         android:id="@+id/userEmailNavHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="vit.azarov@gmail.com"
         app:layout_constraintStart_toEndOf="@+id/userImageNavHeader"
-        app:layout_constraintTop_toBottomOf="@+id/userNameNavHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/userNameNavHeader"
+        tools:text="vit.azarov@gmail.com" />
 
     <Button
         android:id="@+id/loginButtonNavHeader"
