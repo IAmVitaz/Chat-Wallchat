@@ -77,6 +77,7 @@ class CreateUserActivity : AppCompatActivity() {
                                     val userDataChange = Intent(BROADCAST_USER_DATA_CHANGE)
                                     LocalBroadcastManager.getInstance(this).sendBroadcast(userDataChange)
 
+                                    //turn on spinner and block buttons from being pressed
                                     enableSpinner(false)
                                     finish()
                                 } else {

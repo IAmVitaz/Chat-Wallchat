@@ -1,6 +1,7 @@
 package com.example.vitaz.smack.Controller
 
 import android.content.Intent
+import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,6 +20,8 @@ class LoginActivity : AppCompatActivity() {
     fun loginCreateUserButtonClicked(view: View) {
         val createUserIntent = Intent(this, CreateUserActivity::class.java)
         startActivity(createUserIntent)
+        finish()
+
 
     }
 }
