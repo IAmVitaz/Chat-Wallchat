@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/messageUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dark2" />
+
+    <TextView
+        android:id="@+id/messageUserNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/messageUserImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="VitAz" />
+
+    <TextView
+        android:id="@+id/timestampLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/messageUserNameLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="July 29, 10:30 PM" />
+
+    <TextView
+        android:id="@+id/messageBodyLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/messageUserImage"
+        app:layout_constraintTop_toBottomOf="@+id/timestampLabel"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut justo ac dolor efficitur laoreet ac tempus urna. Curabitur posuere dignissim elit, eu laoreet dolor pulvinar ac. Etiam et convallis urna, quis fermentum elit. Quisque id finibus justo. Quisque dapibus, justo eget placerat sodales, ipsum nulla pellentesque nibh, eu tincidunt turpis dui vel nunc. Praesent convallis ultricies felis, vitae aliquam sem. In sit amet mi ex. Proin quis augue viverra lacus cursus faucibus. Duis elementum dapibus volutpat." />
+</android.support.constraint.ConstraintLayout>
