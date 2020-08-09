@@ -1,17 +1,14 @@
-package com.example.vitaz.smack.Controller
+package com.example.vitaz.wallchat.Controller
 
 import android.content.Context
 import android.content.Intent
-import android.hardware.input.InputManager
-import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import com.example.vitaz.smack.R
-import com.example.vitaz.smack.Services.AuthService
-import kotlinx.android.synthetic.main.activity_create_user.*
+import com.example.vitaz.wallchat.R
+import com.example.vitaz.wallchat.Services.AuthService
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

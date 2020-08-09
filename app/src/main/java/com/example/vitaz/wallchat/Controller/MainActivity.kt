@@ -1,4 +1,4 @@
-package com.example.vitaz.smack.Controller
+package com.example.vitaz.wallchat.Controller
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -12,20 +12,19 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import android.widget.EditText
-import com.example.vitaz.smack.Adapters.MessageAdapter
-import com.example.vitaz.smack.Model.Channel
-import com.example.vitaz.smack.Model.Message
-import com.example.vitaz.smack.R
-import com.example.vitaz.smack.Services.AuthService
-import com.example.vitaz.smack.Services.MessageService
-import com.example.vitaz.smack.Services.UserDataService
-import com.example.vitaz.smack.Utilities.BROADCAST_USER_DATA_CHANGE
-import com.example.vitaz.smack.Utilities.SOCKET_URl
+import com.example.vitaz.wallchat.Adapters.MessageAdapter
+import com.example.vitaz.wallchat.Model.Channel
+import com.example.vitaz.wallchat.Model.Message
+import com.example.vitaz.wallchat.R
+import com.example.vitaz.wallchat.Services.AuthService
+import com.example.vitaz.wallchat.Services.MessageService
+import com.example.vitaz.wallchat.Services.UserDataService
+import com.example.vitaz.wallchat.Utilities.BROADCAST_USER_DATA_CHANGE
+import com.example.vitaz.wallchat.Utilities.SOCKET_URl
 import io.socket.client.IO
 import io.socket.emitter.Emitter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -64,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
         setupAdapters()
+        LocalBroadcastManager.getInstance(this).registerReceiver(userDataChangeReceiver,
+                IntentFilter(BROADCAST_USER_DATA_CHANGE))
 
         channel_list.setOnItemClickListener { _, _, i, _ ->
             selectedChannel = MessageService.channels[i]
@@ -75,13 +76,6 @@ class MainActivity : AppCompatActivity() {
             AuthService.findUserByEmail(this){}
         }
     }
-
-    override fun onResume() {
-        super.onResume()
-        LocalBroadcastManager.getInstance(this).registerReceiver(userDataChangeReceiver,
-                IntentFilter(BROADCAST_USER_DATA_CHANGE))
-    }
-
 
     override fun onDestroy() {
         socket.disconnect()
@@ -150,6 +144,7 @@ class MainActivity : AppCompatActivity() {
             userImageNavHeader.setImageResource(R.drawable.profiledefault)
             userImageNavHeader.setBackgroundColor(Color.TRANSPARENT)
             loginButtonNavHeader.text = "Login"
+            mainChannelName.text = "Please log in"
 
         } else {
             val loginIntent = Intent(this, LoginActivity::class.java)

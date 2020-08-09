@@ -1,7 +1,7 @@
-package com.example.vitaz.smack.Services
+package com.example.vitaz.wallchat.Services
 
 import android.graphics.Color
-import com.example.vitaz.smack.Controller.App
+import com.example.vitaz.wallchat.Controller.App
 import java.util.*
 
 object UserDataService {

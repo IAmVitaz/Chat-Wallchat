@@ -1,15 +1,13 @@
-package com.example.vitaz.smack.Services
+package com.example.vitaz.wallchat.Services
 
-import android.content.Context
 import android.util.Log
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
-import com.android.volley.toolbox.Volley
-import com.example.vitaz.smack.Controller.App
-import com.example.vitaz.smack.Model.Channel
-import com.example.vitaz.smack.Model.Message
-import com.example.vitaz.smack.Utilities.URL_GET_CHANNELS
-import com.example.vitaz.smack.Utilities.URL_GET_MESSAGES
+import com.example.vitaz.wallchat.Controller.App
+import com.example.vitaz.wallchat.Model.Channel
+import com.example.vitaz.wallchat.Model.Message
+import com.example.vitaz.wallchat.Utilities.URL_GET_CHANNELS
+import com.example.vitaz.wallchat.Utilities.URL_GET_MESSAGES
 import org.json.JSONException
 
 object MessageService {

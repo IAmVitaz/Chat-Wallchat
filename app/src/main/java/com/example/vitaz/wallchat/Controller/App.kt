@@ -1,7 +1,7 @@
-package com.example.vitaz.smack.Controller
+package com.example.vitaz.wallchat.Controller
 
 import android.app.Application
-import com.example.vitaz.smack.Utilities.SharedPrefs
+import com.example.vitaz.wallchat.Utilities.SharedPrefs
 
 class App: Application() {
     //app  android:name=".Controller.App">   to AndroidManifest file
