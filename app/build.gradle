@@ -10,7 +10,8 @@ android {
     defaultConfig {
         applicationId "com.example.vitaz.wallchat"
         minSdkVersion 19
-        targetSdkVersion 26
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

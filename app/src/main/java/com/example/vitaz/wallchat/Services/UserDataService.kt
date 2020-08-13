@@ -38,7 +38,7 @@ object UserDataService {
         var g = 0
         var b = 0
 
-        val scanner = Scanner(strippedColor)
+        val scanner = Scanner(strippedColor).useLocale(Locale.US)
         if (scanner.hasNext()) {
             r = (scanner.nextDouble() * 255).toInt()
             g = (scanner.nextDouble() * 255).toInt()
