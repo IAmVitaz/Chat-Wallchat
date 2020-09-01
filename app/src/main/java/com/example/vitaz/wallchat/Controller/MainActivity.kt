@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     //adapter to show list of channels
     private fun setupAdapters() {
-        channelAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, MessageService.channels)
+        channelAdapter = ArrayAdapter(this, R.layout.list_colored_text, MessageService.channels)
         channel_list.adapter = channelAdapter
 
         messageAdapter = MessageAdapter(this, MessageService.messages)
