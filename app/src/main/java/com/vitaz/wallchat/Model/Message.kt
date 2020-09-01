@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Model
+package com.vitaz.wallchat.Model
 
 class Message constructor(
         val message: String,

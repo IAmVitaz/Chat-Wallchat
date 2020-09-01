@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Controller
+package com.vitaz.wallchat.Controller
 
 import android.content.Context
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import com.example.vitaz.wallchat.R
-import com.example.vitaz.wallchat.Services.AuthService
+import com.vitaz.wallchat.R
+import com.vitaz.wallchat.Services.AuthService
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

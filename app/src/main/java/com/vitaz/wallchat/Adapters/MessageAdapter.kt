@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Adapters
+package com.vitaz.wallchat.Adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.vitaz.wallchat.Model.Message
-import com.example.vitaz.wallchat.R
-import com.example.vitaz.wallchat.Services.UserDataService
+import com.vitaz.wallchat.Model.Message
+import com.vitaz.wallchat.R
+import com.vitaz.wallchat.Services.UserDataService
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*

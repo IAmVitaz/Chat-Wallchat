@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Services
+package com.vitaz.wallchat.Services
 
 import android.content.Context
 import android.content.Intent
@@ -7,8 +7,8 @@ import android.util.Log
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
-import com.example.vitaz.wallchat.Controller.App
-import com.example.vitaz.wallchat.Utilities.*
+import com.vitaz.wallchat.Controller.App
+import com.vitaz.wallchat.Utilities.*
 import org.json.JSONException
 import org.json.JSONObject
 

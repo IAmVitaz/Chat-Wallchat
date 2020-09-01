@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Model
+package com.vitaz.wallchat.Model
 
 class Channel (val name: String,
                val description: String,

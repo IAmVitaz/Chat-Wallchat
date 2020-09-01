@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Utilities
+package com.vitaz.wallchat.Utilities
 
 import android.content.Context
 import android.content.SharedPreferences

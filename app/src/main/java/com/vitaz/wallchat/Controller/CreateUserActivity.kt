@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Controller
+package com.vitaz.wallchat.Controller
 
 import android.content.Intent
 import android.graphics.Color
@@ -7,9 +7,9 @@ import android.os.Bundle
 import android.support.v4.content.LocalBroadcastManager
 import android.view.View
 import android.widget.Toast
-import com.example.vitaz.wallchat.R
-import com.example.vitaz.wallchat.Services.AuthService
-import com.example.vitaz.wallchat.Utilities.BROADCAST_USER_DATA_CHANGE
+import com.vitaz.wallchat.R
+import com.vitaz.wallchat.Services.AuthService
+import com.vitaz.wallchat.Utilities.BROADCAST_USER_DATA_CHANGE
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 

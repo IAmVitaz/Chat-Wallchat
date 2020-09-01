@@ -1,13 +1,13 @@
-package com.example.vitaz.wallchat.Services
+package com.vitaz.wallchat.Services
 
 import android.util.Log
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
-import com.example.vitaz.wallchat.Controller.App
-import com.example.vitaz.wallchat.Model.Channel
-import com.example.vitaz.wallchat.Model.Message
-import com.example.vitaz.wallchat.Utilities.URL_GET_CHANNELS
-import com.example.vitaz.wallchat.Utilities.URL_GET_MESSAGES
+import com.vitaz.wallchat.Controller.App
+import com.vitaz.wallchat.Model.Channel
+import com.vitaz.wallchat.Model.Message
+import com.vitaz.wallchat.Utilities.URL_GET_CHANNELS
+import com.vitaz.wallchat.Utilities.URL_GET_MESSAGES
 import org.json.JSONException
 
 object MessageService {

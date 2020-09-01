@@ -1,4 +1,4 @@
-package com.example.vitaz.wallchat.Controller
+package com.vitaz.wallchat.Controller
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -16,15 +16,15 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import android.widget.EditText
-import com.example.vitaz.wallchat.Adapters.MessageAdapter
-import com.example.vitaz.wallchat.Model.Channel
-import com.example.vitaz.wallchat.Model.Message
-import com.example.vitaz.wallchat.R
-import com.example.vitaz.wallchat.Services.AuthService
-import com.example.vitaz.wallchat.Services.MessageService
-import com.example.vitaz.wallchat.Services.UserDataService
-import com.example.vitaz.wallchat.Utilities.BROADCAST_USER_DATA_CHANGE
-import com.example.vitaz.wallchat.Utilities.SOCKET_URl
+import com.vitaz.wallchat.Adapters.MessageAdapter
+import com.vitaz.wallchat.Model.Channel
+import com.vitaz.wallchat.Model.Message
+import com.vitaz.wallchat.R
+import com.vitaz.wallchat.Services.AuthService
+import com.vitaz.wallchat.Services.MessageService
+import com.vitaz.wallchat.Services.UserDataService
+import com.vitaz.wallchat.Utilities.BROADCAST_USER_DATA_CHANGE
+import com.vitaz.wallchat.Utilities.SOCKET_URl
 import io.socket.client.IO
 import io.socket.emitter.Emitter
 import kotlinx.android.synthetic.main.activity_main.*
